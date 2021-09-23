@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&display=swap" rel="stylesheet" />
+
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+
+    <!-- Carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.core.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.theme.min.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
+    <!-- Folha de Estilo Personalizada -->
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>Shop dos Celulares</title>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header id="header" class="header">
+        <div class="navigation">
+            <div class="container">
+                <nav class="nav">
+                    <div class="nav_hamburger">
+                        <svg>
+
+                        </svg>
+                    </div>
+                    <div class="nav_logo">
+                        <a href="/" class="scroll-link">
+                            Telefone
+                        </a>
+                    </div>
+                    <div class="nav_menu">
+                        <div class="menu_top">
+                            <span class="nav_category">Telefone</span>
+                            <a href="#" class="close_toggle">
+                                <svg>
+
+                                </svg>
+                            </a>
+                        </div>
+                        <ul class="nav_list">
+                            <li class="nav_item">
+                                <a href="#header" class="nav_link scroll-link">Home</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#category" class="nav_link scroll-link">Categoria</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#news" class="nav_link scroll-link">Blog</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#contato" class="nav_link scroll-link">Contato</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="nav_icons">
+                        <a href="#" class="icon_item">
+                            <svg class="icon-user">
+
+                            </svg>
+                        </a>
+                        <a href="#" class="icon_item">
+                            <svg class="icon_search">
+
+                            </svg>
+                        </a>
+                        <a href="#" class="icon_item">
+                            <svg class="icon_cart">
+                                
+                            </svg>
+                            <span id="cart_total">0</span>
+                        </a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main -->
+    <main id="main">
+        <div class="container">
+            <!-- Categoria -->
+            <section class="category_section section" id="category">
+                <div class="tab_list">
+                    <div class="title_container tabs">
+                        <div class="section_titles category_titles">
+                            <div class="section_title filter-btn active" data-id="Lista de Produtos">
+                                <span class="dot"></span>
+                                <h1 class="primary_title">Lista de Produtos</h1>
+                            </div>
+                        </div>
+                        <div class="section_titles">
+                            <div class="section_title filter-btn" data-id="Trending  Products">
+                                <span class="dot"></span>
+                                <h1 class="primary_title">Produtos em alta</h1>
+                            </div>
+                        </div>
+                        <div class="section_titles">
+                            <div class="section_title filter-btn" data-id="Special Products">
+                                <span class="dot"></span>
+                                <h1 class="primary_title">Produtos especiais</h1>
+                            </div>
+                        </div>
+
+                        <div class="section_titles">
+                            <div class="section_title filter-btn" data-id="Featured Products">
+                                <span class="dot"></span>
+                                <h1 class="primary_title">Produtos em destaque</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="category_container" data-aos="fade-up" data-aos-duration="12000">
+                    <div class="category_center"></div>
+                </div>
+        </div>
+        </section>
+
+        <!-- New Section -->
+        <section class="section news" id="news">
+            <div class="container">
+                <div class="title_container">
+                    <div class="section_titles">
+                        <div class="section_title active">
+                            <span class="dot"></span>
+                            <h1 class="primary_title">Notícias por telefone</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="news_container">
+                    <div class="glide" id="glide_5">
+                        <div class="glide_track" data-glide-el="track">
+                            <ul class="glide_slides">
+                                <li class="glide_slide">
+                                    <div class="new_card">
+                                        <div class="card_header">
+                                            <img src="" alt="">
+                                        </div>
+                                        <div class="card_footer">
+                                            <h3>Estilizando camisas brancas depois de um dia legal</h3>
+                                            <span>Por Administrador</span>
+                                            <p>Lorem ipsum</p>
+                                            <a href="#"><button>Consulte Mais informação</button></a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="glide_slide">
+                                    <div class="new_card">
+                                        <div class="card_header">
+                                            <img src="" alt="">
+                                        </div>
+                                        <div class="card_footer">
+                                            <h3>Estilizando camisas brancas depois de um dia legal</h3>
+                                            <span>Por Administrador</span>
+                                            <p>Lorem ipsum</p>
+                                            <a href="#"><button>Consulte Mais informação</button></a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="glide_slide">
+                                    <div class="new_card">
+                                        <div class="card_header">
+                                            <img src="" alt="">
+                                        </div>
+                                        <div class="card_footer">
+                                            <h3>Estilizando camisas brancas depois de um dia legal</h3>
+                                            <span>Por Administrador</span>
+                                            <p>Lorem ipsum</p>
+                                            <a href="#"><button>Consulte Mais informação</button></a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="glide_slide">
+                                    <div class="new_card">
+                                        <div class="card_header">
+                                            <img src="" alt="">
+                                        </div>
+                                        <div class="card_footer">
+                                            <h3>Estilizando camisas brancas depois de um dia legal</h3>
+                                            <span>Por Administrador</span>
+                                            <p>Lorem ipsum</p>
+                                            <a href="#"><button>Consulte Mais informação</button></a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="glide_slide">
+                                    <div class="new_card">
+                                        <div class="card_header">
+                                            <img src="" alt="">
+                                        </div>
+                                        <div class="card_footer">
+                                            <h3>Estilizando camisas brancas depois de um dia legal</h3>
+                                            <span>Por Administrador</span>
+                                            <p>Lorem ipsum</p>
+                                            <a href="#"><button>Consulte Mais informação</button></a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- NewsLetter -->
+        <section class="section newsletter" id="contact">
+            <div class="container">
+                <div class="newsletter_content">
+                    <div class="newsletter_data">
+                        <h3>ASSINE A NOSSA NEWSLETTER</h3>
+                        <p>Uma frase curta que descreve o que alguém receberá ao se inscrever</p>
+                    </div>
+                    <form action="#">
+                        <input type="email" placeholder="Digite seu endereço de email" class="newsletter_email">
+                        <a class="newsletter_link" href="#">Inscreva-se</a>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <a href="#header" class="goto-top scroll-link">
+        <svg>
+
+        </svg>
+    </a>
+
+</body>
+
+</html>
