@@ -33,7 +33,7 @@
                 <nav class="nav">
                     <div class="nav_hamburger">
                         <svg>
-
+                            <use xlink:href="./images/sprite.svg#icon-menu"></use>
                         </svg>
                     </div>
                     <div class="nav_logo">
@@ -46,7 +46,7 @@
                             <span class="nav_category">Telefone</span>
                             <a href="#" class="close_toggle">
                                 <svg>
-
+                                    <use xlink:href="./images/sprite.svg#icon-cross"></use>
                                 </svg>
                             </a>
                         </div>
@@ -61,7 +61,7 @@
                                 <a href="#news" class="nav_link scroll-link">Blog</a>
                             </li>
                             <li class="nav_item">
-                                <a href="#contato" class="nav_link scroll-link">Contato</a>
+                                <a href="#contact" class="nav_link scroll-link">Contato</a>
                             </li>
                         </ul>
                     </div>
@@ -69,17 +69,17 @@
                     <div class="nav_icons">
                         <a href="#" class="icon_item">
                             <svg class="icon-user">
-
+                                <use xlink:href="./images/sprite.svg#icon-user"></use>
                             </svg>
                         </a>
                         <a href="#" class="icon_item">
                             <svg class="icon_search">
-
+                                <use xlink:href="./images/sprite.svg#icon-search"></use>
                             </svg>
                         </a>
                         <a href="#" class="icon_item">
                             <svg class="icon_cart">
-                                
+                                <use xlink:href="./images/sprite.svg#icon-shopping-basket"></use>
                             </svg>
                             <span id="cart_total">0</span>
                         </a>
@@ -87,11 +87,611 @@
                 </nav>
             </div>
         </div>
+
+        <!-- Hero -->
+        <div class="hero">
+            <div class="glide" id="glide_1">
+                <div class="glide_track" data-glide-el="track">
+                    <ul class="glide_slides">
+                        <li class="glide_slide">
+                            <div class="hero_center">
+                                <div class="hero_left">
+                                    <span class="">Nova Inspiração 2021</span>
+                                    <h1 class="">TELEFONES FEITO PARA VOCÊ</h1>
+                                    <p>Tendências da coleção estilo fone de ouvido e celular</p>
+                                    <a href="#"><button class="hero_btn">COMPRE AGORA</button></a>
+                                </div>
+                                <div class="hero_right">
+                                    <div class="hero_img-container">
+                                        <img class="banner_01" src="./images/banner_01.png" alt="banner2" />
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="glide_slide">
+                            <div class="hero_center">
+                                <div class="hero_left">
+                                    <span>Nova Inspiração 2021</span>
+                                    <h1>TELEFONES FEITO PARA VOCÊ!</h1>
+                                    <p>Tendências da coleção estilo fone de ouvido e celular</p>
+                                    <a href="#"><button class="hero_btn">COMPRE AGORA</button></a>
+                                </div>
+                                <div class="hero_right">
+                                    <img class="banner_02" src="./images/banner_02.png" alt="banner2" />
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="glide_bullets" data-glide-el="controls[nav]">
+                    <button class="glide_bullet" data-glide-dir="=0"></button>
+                    <button class="glide_bullet" data-glide-dir="=1"></button>
+                </div>
+
+                <div class="glide_arrows" data-glide-el="controls">
+                    <button class="glide_arrow glide_arrow--left" data-glide-dir="<">
+                        <svg>
+                            <use xlink:href="./images/sprite.svg#icon-arrow-left2"></use>
+                        </svg>
+                    </button>
+                    <button class="glide_arrow glide_arrow--right" data-glide-dir=">">
+                        <svg>
+                            <use xlink:href="./images/sprite.svg#icon-arrow-right2"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
     </header>
 
     <!-- Main -->
     <main id="main">
         <div class="container">
+            <!-- Collection -->
+            <section id="collection" class="section collection">
+                <div class="collection__container" data-aos="fade-up" data-aos-duration="1200">
+                    <div class="collection__box">
+                        <div class="img_container">
+                            <img class="collection_02" src="./images/collection_02.png" alt="">
+                        </div>
+                        <div class="collection_content">
+                            <div class="collection_data">
+                                <span>Novas cores introduzidas</span>
+                                <h1>FONES DE OUVIDO</h1>
+                                <a href="#shop">COMPRE AGORA</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="collection_box">
+                        <div class="img_container">
+                            <img class="collection_01" src="./images/collection_01.png" alt="">
+                        </div>
+                        <div class="collection_content">
+                            <div class="collection_data">
+                                <span>Predefinições de dispositivo de telefone</span>
+                                <h1>SMARTPHONES</h1>
+                                <a href="#">COMPRE AGORA</a>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+
+            <!-- Produtos Mais recentes -->
+            <section class="section latest_products" id="latest">
+                <div class="title_container">
+                    <div class="section_title active" data-id="Latest Products">
+                        <span class="dot"></span>
+                        <h1 class="primary_title">Produtos Mais Recentes</h1>
+                    </div>
+                </div>
+                <div class="container" data-aos="fade-up" data-aos-duration="1200">
+                    <div class="glide" id="glide_2">
+                        <div class="glide_track" data-glide-el="track">
+                            <ul class="glide_slides latest-center">
+                                <li class="glide_slide">
+                                    <div class="product">
+                                        <div class="product_header">
+                                            <img src="/images/products/iPhone/iphone6.jpeg" alt="produto">
+                                        </div>
+                                        <div class="product_footer">
+                                            <h3>Iphone 11 Apple</h3>
+                                            <div class="rating">
+                                                <svg>
+                                                    <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                                                </svg>
+                                                <svg>
+                                                    <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                                                </svg>
+                                                <svg>
+                                                    <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                                                </svg>
+                                                <svg>
+                                                    <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                                                </svg>
+                                                <svg>
+                                                    <use xlink:href="./images/sprite.svg#icon-star-empty"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="product_price">
+                                                <h4>R$3750</h4>
+                                            </div>
+                                            <a href="#"><button type="submit" class="product_btn">Adicionar ao Carrinho</button></a>
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                <a data-tip="Quick View" data-place="left" href="#">
+                                                    <svg>
+                                                        <use xlink:href="./images/sprite.svg#icon-eye"></use>
+                                                    </svg>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a data-tip="Adicionar a lista de compras" data-place="left" href="#">
+                                                    <svg>
+                                                        <use xlink:href="./images/sprite.svg#icon-heart-o"></use>
+                                                    </svg>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a data-tip="Adicionar para comparar" data-place="left" href="#">
+                                                    <svg>
+                                                        <use xlink:href="./images/sprite.svg#icon-loop2"></use>
+                                                    </svg>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="glide_slide">
+                                    <div class="product">
+                                        <div class="product_header">
+                                            <img src="/images/products/sumsung/samsung5.jpeg" alt="product">
+                                        </div>
+                                        <div class="product_footer">
+                                            <h3>Samsung Galaxy</h3>
+                                            <div class="rating">
+                                                <svg>
+                                                    <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                                                </svg>
+                                                <svg>
+                                                    <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                                                </svg>
+                                                <svg>
+                                                    <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                                                </svg>
+                                                <svg>
+                                                    <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                                                </svg>
+                                                <svg>
+                                                    <use xlink:href="./images/sprite.svg#icon-star-empty"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="product_price">
+                                                <h4>R$900</h4>
+                                            </div>
+                                            <a href="#"><button type="submit" class="product_btn">Adicionar ao Carrinho</button></a>
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                <a data-tip="Olhada rápida" data-place="left" href="#">
+                                                    <svg>
+                                                        <use xlink:href="./images/sprite.svg#icon-eye"></use>
+                                                    </svg>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a data-tip="Adicionar a lista de compras" data-place="left" href="#">
+                                                    <svg>
+                                                        <use xlink:href="./images/sprite.svg#icon-heart-o"></use>
+                                                    </svg>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a data-tip="Adicionar para comparar" data-place="left" href="#">
+                                                    <svg>
+                                                        <use xlink:href="./images/sprite.svg#icon-loop2"></use>
+                                                    </svg>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="glide_slide">
+                                    <div class="product">
+                                        <div class="product_header">
+                                            <img src="/images/products/headphone/headphone4.jpeg" alt="product">
+                                        </div>
+                                        <div class="product_footer">
+                                            <h3>Sony WH-CH510</h3>
+                                            <div class="rating">
+                                                <svg>
+                                                    <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                                                </svg>
+                                                <svg>
+                                                    <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                                                </svg>
+                                                <svg>
+                                                    <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                                                </svg>
+                                                <svg>
+                                                    <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                                                </svg>
+                                                <svg>
+                                                    <use xlink:href="./images/sprite.svg#icon-star-empty"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="product_price">
+                                                <h4>R$600</h4>
+                                            </div>
+                                            <a href="#"><button type="submit" class="product_btn">Adicionar ao Carrinho</button></a>
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                <a data-tip="Olhada rápida" data-place="left" href="#">
+                                                    <svg>
+                                                        <use xlink:href="./images/sprite.svg#icon-eye"></use>
+                                                    </svg>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a data-tip="Adicionar a lista de compras" data-place="left" href="#">
+                                                    <svg>
+                                                        <use xlink:href="./images/sprite.svg#icon-heart-o"></use>
+                                                    </svg>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a data-tip="Adicionar para comparar" data-place="left" href="#">
+                                                    <svg>
+                                                        <use xlink:href="./images/sprite.svg#icon-loop2"></use>
+                                                    </svg>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="glide_slide">
+                                    <div class="product">
+                                        <div class="product_header">
+                                            <img src="/images/products/sumsung/samsung3.jpeg" alt="product">
+                                        </div>
+                                        <div class="product_footer">
+                                            <h3>Sony WH-CH510</h3>
+                                            <div class="rating">
+                                                <svg>
+                                                    <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                                                </svg>
+                                                <svg>
+                                                    <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                                                </svg>
+                                                <svg>
+                                                    <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                                                </svg>
+                                                <svg>
+                                                    <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                                                </svg>
+                                                <svg>
+                                                    <use xlink:href="./images/sprite.svg#icon-star-empty"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="product_price">
+                                                <h4>R$600</h4>
+                                            </div>
+                                            <a href="#"><button type="submit" class="product_btn">Adicionar ao Carrinho</button></a>
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                <a data-tip="Olhada rápida" data-place="left" href="#">
+                                                    <svg>
+                                                        <use xlink:href="./images/sprite.svg#icon-eye"></use>
+                                                    </svg>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a data-tip="Adicionar a lista de compras" data-place="left" href="#">
+                                                    <svg>
+                                                        <use xlink:href="./images/sprite.svg#icon-heart-o"></use>
+                                                    </svg>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a data-tip="Adicionar para comparar" data-place="left" href="#">
+                                                    <svg>
+                                                        <use xlink:href="./images/sprite.svg#icon-loop2"></use>
+                                                    </svg>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="glide_slide">
+                                    <div class="product">
+                                        <div class="product_header">
+                                            <img src="./images/products/iPhone/iphone2.jpeg" alt="product">
+                                        </div>
+                                        <div class="product_footer">
+                                            <h3>Sony WH-CH510</h3>
+                                            <div class="rating">
+                                                <svg>
+                                                    <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                                                </svg>
+                                                <svg>
+                                                    <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                                                </svg>
+                                                <svg>
+                                                    <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                                                </svg>
+                                                <svg>
+                                                    <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                                                </svg>
+                                                <svg>
+                                                    <use xlink:href="./images/sprite.svg#icon-star-empty"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="product_price">
+                                                <h4>R$600</h4>
+                                            </div>
+                                            <a href="#"><button type="submit" class="product_btn">Adicionar ao Carrinho</button></a>
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                <a data-tip="Olhada rápida" data-place="left" href="#">
+                                                    <svg>
+                                                        <use xlink:href="./images/sprite.svg#icon-eye"></use>
+                                                    </svg>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a data-tip="Adicionar a lista de compras" data-place="left" href="#">
+                                                    <svg>
+                                                        <use xlink:href="./images/sprite.svg#icon-heart-o"></use>
+                                                    </svg>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a data-tip="Adicionar para comparar" data-place="left" href="#">
+                                                    <svg>
+                                                        <use xlink:href="./images/sprite.svg#icon-loop2"></use> 
+                                                    </svg>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="glide_slide">
+                                    <div class="product">
+                                        <div class="product_header">
+                                            <img src="images/products/headphone/headphone2.jpeg" alt="product">
+                                        </div>
+                                        <div class="product_footer">
+                                            <h3>Sony WH-CH510</h3>
+                                            <div class="rating">
+                                                <svg>
+                                                    <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                                                </svg>
+                                                <svg>
+                                                    <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                                                </svg>
+                                                <svg>
+                                                    <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                                                </svg>
+                                                <svg>
+                                                    <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                                                </svg>
+                                                <svg>
+                                                    <use xlink:href="./images/sprite.svg#icon-star-empty"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="product_price">
+                                                <h4>R$600</h4>
+                                            </div>
+                                            <a href="#"><button type="submit" class="product_btn">Adicionar ao Carrinho</button></a>
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                <a data-tip="Olhada rápida" data-place="left" href="#">
+                                                    <svg>
+                                                        <use xlink:href="./images/sprite.svg#icon-eye"></use>
+                                                    </svg>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a data-tip="Adicionar a lista de compras" data-place="left" href="#">
+                                                    <svg>
+                                                        <use xlink:href="./images/sprite.svg#icon-heart-o"></use>
+                                                    </svg>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a data-tip="Adicionar para comparar" data-place="left" href="#">
+                                                    <svg>
+                                                        <use xlink:href="./images/sprite.svg#icon-loop2"></use>
+                                                    </svg>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="glide_slide">
+                                    <div class="product">
+                                        <div class="product_header">
+                                            <img src="images/products/sumsung/samsung1.jpeg" alt="product">
+                                        </div>
+                                        <div class="product_footer">
+                                            <h3>Sony WH-CH510</h3>
+                                            <div class="rating">
+                                                <svg>
+                                                    <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                                                </svg>
+                                                <svg>
+                                                    <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                                                </svg>
+                                                <svg>
+                                                    <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                                                </svg>
+                                                <svg>
+                                                    <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                                                </svg>
+                                                <svg>
+                                                    <use xlink:href="./images/sprite.svg#icon-star-empty"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="product_price">
+                                                <h4>R$600</h4>
+                                            </div>
+                                            <a href="#"><button type="submit" class="product_btn">Adicionar ao Carrinho</button></a>
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                <a data-tip="Olhada rápida" data-place="left" href="#">
+                                                    <svg>
+                                                        <use xlink:href="./images/sprite.svg#icon-eye"></use>
+                                                    </svg>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a data-tip="Adicionar a lista de compras" data-place="left" href="#">
+                                                    <svg>
+                                                        <use xlink:href="./images/sprite.svg#icon-heart-o"></use>
+                                                    </svg>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a data-tip="Adicionar para comparar" data-place="left" href="#">
+                                                    <svg>
+                                                        <use xlink:href="./images/sprite.svg#icon-loop2"></use>
+                                                    </svg>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="glide_slide">
+                                    <div class="product">
+                                        <div class="product_header">
+                                            <img src="images/products/headphone/headphone1.jpeg" alt="product">
+                                        </div>
+                                        <div class="product_footer">
+                                            <h3>Sony WH-CH510</h3>
+                                            <div class="rating">
+                                                <svg>
+                                                    <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                                                </svg>
+                                                <svg>
+                                                    <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                                                </svg>
+                                                <svg>
+                                                    <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                                                </svg>
+                                                <svg>
+                                                    <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                                                </svg>
+                                                <svg>
+                                                    <use xlink:href="./images/sprite.svg#icon-star-empty"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="product_price">
+                                                <h4>R$600</h4>
+                                            </div>
+                                            <a href="#"><button type="submit" class="product_btn">Adicionar ao Carrinho</button></a>
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                <a data-tip="Olhada rápida" data-place="left" href="#">
+                                                    <svg>
+                                                        <use xlink:href="./images/sprite.svg#icon-eye"></use>
+                                                    </svg>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a data-tip="Adicionar a lista de compras" data-place="left" href="#">
+                                                    <svg>
+                                                        <use xlink:href="./images/sprite.svg#icon-heart-o"></use>
+                                                    </svg>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a data-tip="Adicionar para comparar" data-place="left" href="#">
+                                                    <svg>
+                                                        <use xlink:href="./images/sprite.svg#icon-loop2"></use>
+                                                    </svg>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="glide_slide">
+                                    <div class="product">
+                                        <div class="product_header">
+                                            <img src="images/products/iPhone/iphone1.jpeg" alt="product">
+                                        </div>
+                                        <div class="product_footer">
+                                            <h3>Sony WH-CH510</h3>
+                                            <div class="rating">
+                                                <svg>
+                                                    <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                                                </svg>
+                                                <svg>
+                                                    <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                                                </svg>
+                                                <svg>
+                                                    <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                                                </svg>
+                                                <svg>
+                                                    <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                                                </svg>
+                                                <svg>
+                                                    <use xlink:href="./images/sprite.svg#icon-star-empty"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="product_price">
+                                                <h4>R$600</h4>
+                                            </div>
+                                            <a href="#"><button type="submit" class="product_btn">Adicionar ao Carrinho</button></a>
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                <a data-tip="Olhada rápida" data-place="left" href="#">
+                                                    <svg>
+                                                        <use xlink:href="./images/sprite.svg#icon-eye"></use>
+                                                    </svg>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a data-tip="Adicionar a lista de compras" data-place="left" href="#">
+                                                    <svg>
+                                                        <use xlink:href="./images/sprite.svg#icon-heart-o"></use>
+                                                    </svg>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a data-tip="Adicionar para comparar" data-place="left" href="#">
+                                                    <svg>
+                                                        <use xlink:href="./images/sprite.svg#icon-loop2"></use>
+                                                    </svg>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                            </ul>
+                        </div>
+
+                        <div class="glide_arrows" data-glide-el="controls">
+                            <button class="glide_arrow glide_arrow--left" data-glide-dir="<">
+                                <svg>
+                                    <use xlink:href="./images/sprite.svg#icon-arrow-left2"></use>
+                                </svg>
+                            </button>
+                            <button class="glide_arrow glide_arrow--right" data-glide-dir=">">
+                                <svg>
+                                    <use xlink:href="./images/sprite.svg#icon-arrow-right2"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             <!-- Categoria -->
             <section class="category_section section" id="category">
                 <div class="tab_list">
@@ -126,86 +726,198 @@
                 <div class="category_container" data-aos="fade-up" data-aos-duration="12000">
                     <div class="category_center"></div>
                 </div>
+                </div>
+            </section>
+            <!-- Facility Section -->
+            <section class="facility_section section" id="facility">
+                <div class="container">
+                    <div class="facility_container" data-aos="fade-up" data-aos-duration="1200">
+                        <div class="facility_box">
+                            <div class="facility-img_container">
+                                <svg>
+                                <use xlink:href="./images/sprite.svg#icon-airplane"></use>
+                            </svg>
+                            </div>
+                            <p>FRETE GRÁTIS EM TODO O MUNDO</p>
+                        </div>
+
+                        <div class="facility_box">
+                            <div class="facility-img_container">
+                                <svg>
+                                <use xlink:href="./images/sprite.svg#icon-credit-card-alt"></use>
+                            </svg>
+                            </div>
+                            <p>100% DE GARANTIA DE DEVOLUÇÃO DE DINHEIRO</p>
+                        </div>
+
+                        <div class="facility_box">
+                            <div class="facility-img_container">
+                                <svg>
+                                <use xlink:href="./images/sprite.svg#icon-credit-card"></use>
+                            </svg>
+                            </div>
+                            <p>MUITAS GATWAYS DE PAGAMENTO</p>
+                        </div>
+
+                        <div class="facility_box">
+                            <div class="facility-img_container">
+                                <svg>
+                                <use xlink:href="./images/sprite.svg#icon-headphones"></use>
+                            </svg>
+                            </div>
+                            <p>24/7 Suporte Online</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
+
+        <!-- Testimonial Section -->
+        <section class="section testimonial" id="testimonial">
+            <div class="testimonial_container">
+                <div class="glide" id="glide_4">
+                    <div class="glide_track" data-glide-el="track">
+                        <ul class="glide_slides">
+                            <li class="glide_slide">
+                                <div class="testimonial_box">
+                                    <div class="client_image">
+                                        <img src="./images/profile1.jpg" alt="profile">
+                                    </div>
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae fuga hic nesciunt tempore quibusdam consequatur eligendi unde officia ex quae.ipsum dolor sit amet consectetur adipisicing elit. Recusandae fuga hic
+                                        nesciunt tempore quibusdam consequatur eligendi unde officia ex quae.</p>
+                                    <div class="client_info">
+                                        <h3>John Smith</h3>
+                                        <span>Founder at Apple</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="glide_slide">
+                                <div class="testimonial_box">
+                                    <div class="client_image">
+                                        <img src="./images/profile2.jpg" alt="profile">
+                                    </div>
+                                    <p>Lorem, ipsum</p>
+                                    <div class="client_info">
+                                        <h3>John Smith</h3>
+                                        <span>Founder at Apple</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="glide_slide">
+                                <div class="testimonial_box">
+                                    <div class="client_image">
+                                        <img src="./images/profile3.jpg" alt="profile">
+                                    </div>
+                                    <p>Lorem, ipsum </p>
+                                    <div class="client_info ">
+                                        <h3>John Smith</h3>
+                                        <span>Founder at Apple</span>
+                                    </div>
+                                </div>
+
+                            </li>
+                            <li class="glide_slide ">
+                                <div class="testimonial_box ">
+                                    <div class="client_image ">
+                                        <img src="./images/profile4.jpg" alt=" ">
+                                    </div>
+                                    <p>Lorem, ipsum</p>
+                                    <div class="client_info ">
+                                        <h3>John Smith</h3>
+                                        <span>Founder at Apple</span>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="glide_bullets " data-glide-el="controls[nav] ">
+                        <button class="glide_bullet " data-glide-dir="=0 "></button>
+                        <button class="glide_bullet " data-glide-dir="=1 "></button>
+                        <button class="glide_bullet " data-glide-dir="=2 "></button>
+                        <button class="glide_bullet " data-glide-dir="=3 "></button>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <!-- New Section -->
         <section class="section news" id="news">
             <div class="container">
                 <div class="title_container">
-                    <div class="section_titles">
-                        <div class="section_title active">
-                            <span class="dot"></span>
-                            <h1 class="primary_title">Notícias por telefone</h1>
+                    <div class="section_titles ">
+                        <div class="section_title active ">
+                            <span class="dot "></span>
+                            <h1 class="primary_title ">Notícias por telefone</h1>
                         </div>
                     </div>
                 </div>
-                <div class="news_container">
-                    <div class="glide" id="glide_5">
-                        <div class="glide_track" data-glide-el="track">
-                            <ul class="glide_slides">
-                                <li class="glide_slide">
-                                    <div class="new_card">
-                                        <div class="card_header">
-                                            <img src="" alt="">
+                <div class="news_container ">
+                    <div class="glide" id="glide_5 ">
+                        <div class="glide_track " data-glide-el="track ">
+                            <ul class="glide_slides ">
+                                <li class="glide_slide ">
+                                    <div class="new_card ">
+                                        <div class="card_header ">
+                                            <img src="./images/news1.jpg" alt=" ">
                                         </div>
-                                        <div class="card_footer">
+                                        <div class="card_footer ">
                                             <h3>Estilizando camisas brancas depois de um dia legal</h3>
                                             <span>Por Administrador</span>
                                             <p>Lorem ipsum</p>
-                                            <a href="#"><button>Consulte Mais informação</button></a>
+                                            <a href="# "><button>Consulte Mais informação</button></a>
                                         </div>
                                     </div>
                                 </li>
-                                <li class="glide_slide">
-                                    <div class="new_card">
-                                        <div class="card_header">
-                                            <img src="" alt="">
+                                <li class="glide_slide ">
+                                    <div class="new_card ">
+                                        <div class="card_header ">
+                                            <img src="./images/news2.jpg" alt=" ">
                                         </div>
-                                        <div class="card_footer">
+                                        <div class="card_footer ">
                                             <h3>Estilizando camisas brancas depois de um dia legal</h3>
                                             <span>Por Administrador</span>
                                             <p>Lorem ipsum</p>
-                                            <a href="#"><button>Consulte Mais informação</button></a>
+                                            <a href="# "><button>Consulte Mais informação</button></a>
                                         </div>
                                     </div>
                                 </li>
-                                <li class="glide_slide">
-                                    <div class="new_card">
-                                        <div class="card_header">
-                                            <img src="" alt="">
+                                <li class="glide_slide ">
+                                    <div class="new_card ">
+                                        <div class="card_header ">
+                                            <img src="./images/news3.jpg" alt=" ">
                                         </div>
-                                        <div class="card_footer">
+                                        <div class="card_footer ">
                                             <h3>Estilizando camisas brancas depois de um dia legal</h3>
                                             <span>Por Administrador</span>
                                             <p>Lorem ipsum</p>
-                                            <a href="#"><button>Consulte Mais informação</button></a>
+                                            <a href="# "><button>Consulte Mais informação</button></a>
                                         </div>
                                     </div>
                                 </li>
-                                <li class="glide_slide">
-                                    <div class="new_card">
-                                        <div class="card_header">
-                                            <img src="" alt="">
+                                <li class="glide_slide ">
+                                    <div class="new_card ">
+                                        <div class="card_header ">
+                                            <img src="./images/news4.jpg" alt=" ">
                                         </div>
-                                        <div class="card_footer">
+                                        <div class="card_footer ">
                                             <h3>Estilizando camisas brancas depois de um dia legal</h3>
                                             <span>Por Administrador</span>
                                             <p>Lorem ipsum</p>
-                                            <a href="#"><button>Consulte Mais informação</button></a>
+                                            <a href="# "><button>Consulte Mais informação</button></a>
                                         </div>
                                     </div>
                                 </li>
-                                <li class="glide_slide">
-                                    <div class="new_card">
-                                        <div class="card_header">
-                                            <img src="" alt="">
+                                <li class="glide_slide ">
+                                    <div class="new_card ">
+                                        <div class="card_header ">
+                                            <img src="./images/news5.jpg" alt=" ">
                                         </div>
-                                        <div class="card_footer">
+                                        <div class="card_footer ">
                                             <h3>Estilizando camisas brancas depois de um dia legal</h3>
                                             <span>Por Administrador</span>
                                             <p>Lorem ipsum</p>
-                                            <a href="#"><button>Consulte Mais informação</button></a>
+                                            <a href="# "><button>Consulte Mais informação</button></a>
                                         </div>
                                     </div>
                                 </li>
@@ -217,27 +929,136 @@
         </section>
 
         <!-- NewsLetter -->
-        <section class="section newsletter" id="contact">
-            <div class="container">
-                <div class="newsletter_content">
-                    <div class="newsletter_data">
+        <section class="section newsletter " id="contact">
+            <div class="container ">
+                <div class="newsletter_content ">
+                    <div class="newsletter_data ">
                         <h3>ASSINE A NOSSA NEWSLETTER</h3>
                         <p>Uma frase curta que descreve o que alguém receberá ao se inscrever</p>
                     </div>
-                    <form action="#">
-                        <input type="email" placeholder="Digite seu endereço de email" class="newsletter_email">
-                        <a class="newsletter_link" href="#">Inscreva-se</a>
+                    <form action="# ">
+                        <input type="email " placeholder="Digite seu endereço de email " class="newsletter_email ">
+                        <a class="newsletter_link " href="# ">Inscreva-se</a>
                     </form>
                 </div>
             </div>
         </section>
     </main>
 
-    <a href="#header" class="goto-top scroll-link">
-        <svg>
+    <!-- Footer -->
+    <footer id="footer " class="section footer ">
+        <div class="container ">
+            <div class="footer_top ">
+                <div class="footer-top_box ">
+                    <h3>EXTRAS</h3>
+                    <a href="# ">Marcas</a>
+                    <a href="# ">Certificados de presente</a>
+                    <a href="# ">Afiliada</a>
+                    <a href="# ">Espiciais</a>
+                    <a href="# ">Mapa do Site</a>
+                </div>
+                <div class="footer-top_box ">
+                    <h3>INFORMAÇÕES</h3>
+                    <a href=" ">Sobre nós</a>
+                    <a href=" ">Politica de Privacidade</a>
+                    <a href=" ">Termos e Condições</a>
+                    <a href=" ">Contate nós</a>
+                    <a href=" ">Mapa do Site</a>
+                </div>
+                <div class="footer-top_box ">
+                    <h3>Minha Conta</h3>
+                    <a href=" ">Minha Conta</a>
+                    <a href=" ">Historico de Pedidos</a>
+                    <a href=" ">Lista de Compras</a>
+                    <a href=" ">Boletim de Notícias</a>
+                    <a href=" ">Retornar</a>
+                </div>
+                <div class="footer-top_box ">
+                    <h3>Contate nós</h3>
+                    <div>
+                        <span>
+                            <svg>
+                                <use xlink:href="./images/sprite.svg#icon-location"></use>
+                            </svg>
+                        </span> Endereço xx país xxx
+                    </div>
+                    <div>
+                        <span>
+                          <svg>
+                            <use xlink:href="./images/sprite.svg#icon-envelop"></use>
+                          </svg>
+                        </span> company@gmail.com
+                    </div>
+                    <div>
+                        <span>
+                          <svg>
+                            <use xlink:href="./images/sprite.svg#icon-phone"></use>
+                          </svg>
+                        </span> 989898989 ---4887878
+                    </div>
+                    <div>
+                        <span>
+                          <svg>
+                            <use xlink:href="./images/sprite.svg#icon-paperplane"></use>
+                          </svg>
+                        </span> Porto Alegre, RS
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer_bottom ">
+            <div class="footer-bottom_box ">
 
+            </div>
+            <div class="footer-bottom_box ">
+
+            </div>
+        </div>
+        </div>
+    </footer>
+
+    <!-- PopUp -->
+    <div class="popup hide_popup ">
+        <div class="popup_content ">
+            <div class="popup_close ">
+                <svg>
+                    <use xlink:href="./images/sprite.svg#icon-cross"></use>
+                </svg>
+            </div>
+            <div class="popup_left ">
+                <div class="popup-img_container ">
+                    <img class="popup_img " src="./images/popup.jpg" alt="popup ">
+                </div>
+            </div>
+            <div class="popup_right ">
+                <div class="right_content ">
+                    <h1>Obtenha desconto <span>30%</span> Off</h1>
+                    <p>
+                        Assine nossa newsletter e economize 30% na sua próxima compra. Sem spam, nós prometemos!
+                    </p>
+                    <form action="# ">
+                        <input type="email " placeholder="Digite seu email... " class="popup_form ">
+                        <a href="# ">Subscribe</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <a href="#header " class="goto-top scroll-link ">
+        <svg>
+            <use xlink:href="./images/sprite.svg#icon-arrow-up"></use>
         </svg>
     </a>
+
+    <!-- Glide Carousel Script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/glide.min.js "></script>
+
+    <!-- Animate On Scroll -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js "></script>
+
+    <!-- JavaScript personalizado -->
+    <script src="./js/product.js"></script>
 
 </body>
 
