@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&display=swap" rel="stylesheet" />
+
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+
+    <!-- Carousel -->
+    <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css" />
+    <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.theme.min.css" />
+
+    <!-- Animate On Scroll -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
+    <!-- Folha de Estilo Personalizada -->
+    <link rel="stylesheet" href="css/estilo.css" />
+    <title>Shop dos Celulares</title>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header id="header" class="header">
+        <div class="navigation">
+            <div class="container">
+                <nav class="nav">
+                    <div class="nav_hamburger">
+                        <svg>
+                            <use xlink:href="./images/sprite.svg#icon-menu"></use>
+                        </svg>
+                    </div>
+                    <div class="nav_logo">
+                        <a href="/" class="scroll-link">
+                            Telefone
+                        </a>
+                    </div>
+                    <div class="nav_menu">
+                        <div class="menu_top">
+                            <span class="nav_category">Telefone</span>
+                            <a href="#" class="close_toggle">
+                                <svg>
+                                    <use xlink:href="./images/sprite.svg#icon-cross"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        <ul class="nav_list">
+                            <li class="nav_item">
+                                <a href="/" class="nav_link">Home</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link">Categoria</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link">Blog</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link">Contato</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="nav_icons">
+                        <a href="#" class="icon_item">
+                            <svg class="icon-user">
+                                <use xlink:href="./images/sprite.svg#icon-user"></use>
+                            </svg>
+                        </a>
+                        <a href="#" class="icon_item">
+                            <svg class="icon_search">
+                                <use xlink:href="./images/sprite.svg#icon-search"></use>
+                            </svg>
+                        </a>
+                        <a href="#" class="icon_item">
+                            <svg class="icon_cart">
+                                <use xlink:href="./images/sprite.svg#icon-shopping-basket"></use>
+                            </svg>
+                            <span id="cart_total">0</span>
+                        </a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+        <div class="page_title-area">
+            <div class="container">
+                <div class="page_title-container">
+                    <ul class="page_titles">
+                        <li>
+                            <a href="/">
+                                <svg>
+                                    <use xlink:href="./images/sprite.svg#icon-home"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="page_title">Carrinho</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main -->
+    <main id="main">
+        <section class="section cart_area">
+            <div class="container">
+                <div class="responsive_cart-area">
+                    <form class="cart_form">
+                        <div class="cart_table table-responsive">
+                            <table width="100%" class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Produto</th>
+                                        <th>Nome</th>
+                                        <th>Preço Unitário</th>
+                                        <th>Quantidade</th>
+                                        <th>Total</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="product_thumbnail">
+                                            <a href="#">
+                                                <img src="./images/products/iPhone/iphone6.jpeg" alt="">
+                                            </a>
+                                        </td>
+                                        <td class="product_name">
+                                            <a href="#">Apple iPhone 11</a>
+                                            <br><br>
+                                            <small>Branco/6.25</small>
+                                        </td>
+                                        <td class="product_price">
+                                            <div class="price">
+                                                <span class="new_price">R$250.99</span>
+                                            </div>
+                                        </td>
+                                        <td class="product_quantity">
+                                            <div class="input-counter">
+                                                <div>
+                                                    <span class="minus-btn">
+                                                            <svg>
+                                                                <use xlink:href="./images/sprite.svg#icon-minus"></use>
+                                                            </svg>
+                                                        </span>
+                                                    <input type="text" min="1" value="1" max="10" class="counter-btn">
+                                                    <span class="plus-btn">
+                                                            <svg>
+                                                                <use xlink:href="./images/sprite.svg#icon-plus"></use>
+                                                            </svg>
+                                                        </span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="product_subtotal">
+                                            <div class="price">
+                                                <span class="new_price">R$250.99</span>
+                                            </div>
+                                            <a href="#" class="remove_cart-item">
+                                                <svg>
+                                                    <use xlink:href="./images/sprite.svg#icon-trash"></use>
+                                                </svg>
+                                            </a>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="product_thumbnail">
+                                            <a href="#">
+                                                <img src="./images/products/samsung/samsung5.jpeg" alt="">
+                                            </a>
+                                        </td>
+                                        <td class="product_name">
+                                            <a href="#">Samsung 5</a>
+                                            <br><br>
+                                            <small>Branco/6.25</small>
+                                        </td>
+                                        <td class="product_price">
+                                            <div class="price">
+                                                <span class="new_price">R$250.99</span>
+                                            </div>
+                                        </td>
+                                        <td class="product_quantity">
+                                            <div class="input-counter">
+                                                <div>
+                                                    <span class="minus-btn">
+                                                            <svg>
+                                                                <use xlink:href="./images/sprite.svg#icon-minus"></use>
+                                                            </svg>
+                                                        </span>
+                                                    <input type="text" min="1" value="1" max="10" class="counter-btn">
+                                                    <span class="plus-btn">
+                                                            <svg>
+                                                                <use xlink:href="./images/sprite.svg#icon-plus"></use>
+                                                            </svg>
+                                                        </span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="product_subtotal">
+                                            <div class="price">
+                                                <span class="new_price">R$250.99</span>
+                                            </div>
+                                            <a href="#" class="remove_cart-item">
+                                                <svg>
+                                                        <use xlink:href="./images/sprite.svg#icon-trash"></use>
+                                                    </svg>
+                                            </a>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="product_thumbnail">
+                                            <a href="#">
+                                                <img src="./images/products/iPhone/iphone6.jpeg" alt="">
+                                            </a>
+                                        </td>
+                                        <td class="product_name">
+                                            <a href="#">Apple iPhone 11</a>
+                                            <br><br>
+                                            <small>Branco/6.25</small>
+                                        </td>
+                                        <td class="product_price">
+                                            <div class="price">
+                                                <span class="new_price">R$250.99</span>
+                                            </div>
+                                        </td>
+                                        <td class="product_quantity">
+                                            <div class="input-counter">
+                                                <div>
+                                                    <span class="minus-btn">
+                                                            <svg>
+                                                                <use xlink:href="./images/sprite.svg#icon-minus"></use>
+                                                            </svg>
+                                                        </span>
+                                                    <input type="text" min="1" value="1" max="10" class="counter-btn">
+                                                    <span class="plus-btn">
+                                                            <svg>
+                                                                <use xlink:href="./images/sprite.svg#icon-plus"></use>
+                                                            </svg>
+                                                        </span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="product_subtotal">
+                                            <div class="price">
+                                                <span class="new_price">R$250.99</span>
+                                            </div>
+                                            <a href="#" class="remove_cart-item">
+                                                <svg>
+                                                        <use xlink:href="./images/sprite.svg#icon-trash"></use>
+                                                    </svg>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="product_thumbnail">
+                                            <a href="#">
+                                                <img src="./images/products/iPhone/iphone6.jpeg" alt="">
+                                            </a>
+                                        </td>
+                                        <td class="product_name">
+                                            <a href="#">Apple iPhone 11</a>
+                                            <br><br>
+                                            <small>Branco/6.25</small>
+                                        </td>
+                                        <td class="product_price">
+                                            <div class="price">
+                                                <span class="new_price">R$250.99</span>
+                                            </div>
+                                        </td>
+                                        <td class="product_quantity">
+                                            <div class="input-counter">
+                                                <div>
+                                                    <span class="minus-btn">
+                                                            <svg>
+                                                                <use xlink:href="./images/sprite.svg#icon-minus"></use>
+                                                            </svg>
+                                                        </span>
+                                                    <input type="text" min="1" value="1" max="10" class="counter-btn">
+                                                    <span class="plus-btn">
+                                                            <svg>
+                                                                <use xlink:href="./images/sprite.svg#icon-plus"></use>
+                                                            </svg>
+                                                        </span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="product_subtotal">
+                                            <div class="price">
+                                                <span class="new_price">R$250.99</span>
+                                            </div>
+                                            <a href="#" class="remove_cart-item">
+                                                <svg>
+                                                        <use xlink:href="./images/sprite.svg#icon-trash"></use>
+                                                    </svg>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="cart-btns">
+                            <div class="continue_shopping">
+                                <a href="/">Continuar Compras</a>
+                            </div>
+                            <div class="check_shipping">
+                                <input type="checkbox">
+                                <span>Entrega(+7R$)</span>
+                            </div>
+                        </div>
+
+                        <div class="cart_totals">
+                            <h3>Total do Carrinho</h3>
+                            <ul>
+                                <li>
+                                    SubTotal
+                                    <span class="new_price">R$250.99</span>
+                                </li>
+                                <li>
+                                    Entrega
+                                    <span>R$0</span>
+                                </li>
+                                <li>
+                                    Total
+                                    <span class="new_price">R$250.99</span>
+                                </li>
+                            </ul>
+                            <a href="">FAZER O CHECK-OUT</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Facility Section -->
+        <section class="facility_section section" id="facility">
+            <div class="container">
+                <div class="facility_container">
+                    <div class="facility_box">
+                        <div class="facility-img_container">
+                            <svg>
+                                <use xlink:href="./images/sprite.svg#icon-airplane"></use>
+                            </svg>
+                        </div>
+                        <p>FRETE GRÁTIS EM TODO O MUNDO</p>
+                    </div>
+
+                    <div class="facility_box">
+                        <div class="facility-img_container">
+                            <svg>
+                                <use xlink:href="./images/sprite.svg#icon-credit-card-alt"></use>
+                            </svg>
+                        </div>
+                        <p>100% GARANTIA DEVOLUÇÃO DE DINHEIRO</p>
+                    </div>
+
+                    <div class="facility_box">
+                        <div class="facility-img_container">
+                            <svg>
+                                <use xlink:href="./images/sprite.svg#icon-credit-card"></use>
+                            </svg>
+                        </div>
+                        <p>MUITAS FORMAS DE PAGAMENTO</p>
+                    </div>
+
+                    <div class="facility_box">
+                        <div class="facility-img_container">
+                            <svg>
+                                <use xlink:href="./images/sprite.svg#icon-headphones"></use>
+                            </svg>
+                        </div>
+                        <p>24/h Suporte Online</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer" class="section footer">
+        <div class="container">
+            <div class="footer_top">
+                <div class="footer-top_box">
+                    <h3>EXTRAS</h3>
+                    <a href="#">Marcas</a>
+                    <a href="#">Certificados de presente</a>
+                    <a href="#">Afiliada</a>
+                    <a href="#">Espiciais</a>
+                    <a href="#">Mapa do Site</a>
+                </div>
+                <div class="footer-top_box">
+                    <h3>INFORMAÇÕES</h3>
+                    <a href="">Sobre nós</a>
+                    <a href="">Politica de Privacidade</a>
+                    <a href="">Termos e Condições</a>
+                    <a href="">Contate nós</a>
+                    <a href="">Mapa do Site</a>
+                </div>
+                <div class="footer-top_box">
+                    <h3>Minha Conta</h3>
+                    <a href="">Minha Conta</a>
+                    <a href="">Historico de Pedidos</a>
+                    <a href="">Lista de Compras</a>
+                    <a href="">Boletim de Notícias</a>
+                    <a href="">Retornar</a>
+                </div>
+                <div class="footer-top_box">
+                    <h3>Contate nós</h3>
+                    <div>
+                        <span>
+                            <svg>
+                                <use xlink:href="./images/sprite.svg#icon-location"></use>
+                            </svg>
+                        </span> Endereço xx país xxx
+                    </div>
+                    <div>
+                        <span>
+                          <svg>
+                            <use xlink:href="./images/sprite.svg#icon-envelop"></use>
+                          </svg>
+                        </span> company@gmail.com
+                    </div>
+                    <div>
+                        <span>
+                          <svg>
+                            <use xlink:href="./images/sprite.svg#icon-phone"></use>
+                          </svg>
+                        </span> 989898989 ---4887878
+                    </div>
+                    <div>
+                        <span>
+                          <svg>
+                            <use xlink:href="./images/sprite.svg#icon-paperplane"></use>
+                          </svg>
+                        </span> Porto Alegre, RS
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer_bottom">
+            <div class="footer-bottom_box">
+
+            </div>
+            <div class="footer-bottom_box">
+
+            </div>
+        </div>
+        </div>
+    </footer>
+
+    <a href="#header" class="goto-top scroll-link">
+        <svg>
+          <use xlink:href="./images/sprite.svg#icon-arrow-up"></use>
+        </svg>
+    </a>
+
+    <!-- Glide Carousel Script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/glide.min.js"></script>
+
+    <!-- Animate On Scroll -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- JavaScript personalizado -->
+    <script src="./js/produtos.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/slider.js"></script>
+
+</body>
+
+</html>
