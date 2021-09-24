@@ -297,7 +297,7 @@ h4 {
     }
 }
 
-@media only screen and (max-width: 560px) {
+@media only screen and (max-width: 568px) {
     .nav_icons .icon_item svg {
         width: 1.4rem;
         height: 1.4rem;
@@ -311,7 +311,7 @@ h4 {
 /* Hero Area */
 
 .hero,
-.hero .glide_slides {
+.hero .glide__slides {
     background-color: var(--primaryColor);
     position: relative;
     width: 100%;
@@ -411,7 +411,7 @@ h4 {
 }
 
 .hero_left p {
-    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 .hero_right {
@@ -454,7 +454,7 @@ h4 {
 
 @media only screen and(max-width: 567px) {
     .hero,
-    .hero .glide_slides {
+    .hero .glide__slides {
         height: 60vh;
     }
     .hero_right {
