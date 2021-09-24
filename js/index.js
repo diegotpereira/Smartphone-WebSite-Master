@@ -8,15 +8,15 @@ const navContainer = document.querySelector(".nav_menu");
 navOpen.addEventListener("click", () => {
     menu.classList.add("open");
     document.body.classList.add("active");
-    navContainer.getElementsByClassName.left = "0";
-    navContainer.getElementsByClassName.width = "30rem";
+    navContainer.style.left = "0";
+    navContainer.style.width = "30rem";
 });
 
 navClose.addEventListener("click", () => {
     menu.classList.remove("open");
     document.body.classList.remove("active");
-    navContainer.getElementsByClassName.left = "-30rem";
-    navContainer.getElementsByClassName.width = "0";
+    navContainer.style.left = "-30rem";
+    navContainer.style.width = "0";
 });
 
 // PopUp
